@@ -584,6 +584,11 @@ max-width: 264px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fotter-send-btn:hover,
+.fotter-send-btn:focus {
+    background-color:#404BBF;
 }
 
 .send-icon {
@@ -602,7 +607,9 @@ max-width: 264px;
     top: 0;
     background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .model {
@@ -660,7 +667,6 @@ fill: #FFFFFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 24px;
     margin-bottom: 16px;
 }
  .model-field {
@@ -785,4 +791,9 @@ margin-bottom: 16px;
         display: block;
         margin:0 auto;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .model-send-btn:hover,
+    .model-send-btn:focus {
+        background-color: #404BBF;
     }
